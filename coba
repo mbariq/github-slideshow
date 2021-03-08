@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+
+int main(){
+	int n,i,x,y,c,d,e;
+	i = 0;
+	
+	printf("masukkan N kali percobaan : ");
+	scanf("%d",&n);
+	
+	int a[n] = {0};
+	
+	printf("masukkan tahun : \n");
+	
+	while (i<n){
+		scanf("%d",&x);
+		a[i] = x;
+		i += 1;
+	}
+	
+	i *= 0;
+	printf("");
+	
+	while (i<n){
+		y = a[i];
+		c = y%4;
+		d = y%100;
+		e = y%400;
+		
+		if (c == 0 and  d != 0 or e == 0){
+ 		printf("Leap Year \n");
+		}
+		
+ 		else { 
+ 		printf("Not A leap Year \n");
+ 		}
+ 		
+ 		i +=1;	
+	}
+}
